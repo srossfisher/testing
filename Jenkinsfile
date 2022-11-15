@@ -16,8 +16,7 @@ pipeline {
     }
     stage('checkout tfenv') {
       steps {
-        script {
-          
+        script {          
           sh '''#!/bin/bash
           mkdir ./tfenv
           git clone https://github.com/tfutils/tfenv.git $(pwd)/.tfenv
